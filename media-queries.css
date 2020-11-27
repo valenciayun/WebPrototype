@@ -1,0 +1,182 @@
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .row img {
+    width: 30%;
+    height: 30%;
+  }
+
+  h2 {
+    font-size: 110%;
+    padding-top: 10%;
+  }
+
+  p {
+    font-size: 80%;
+  }
+  nav {
+    background-color: #FFB806;
+  }
+
+  nav .main-nav {
+    float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+  }
+
+  nav .main-nav a {
+    font-size: 20px;
+  }
+
+  nav :checked ~ .main-nav {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+  .intro-text-box { 
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    width: 80%;
+    padding: 5%;
+    line-height: 250%;
+  }
+
+  .intro-text-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 145%;
+  }
+
+  .image-description-halves {
+    padding: 5%;
+  }
+
+  .image-description-halves h2, p {
+    font-size: 110%;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .image-description-halves img {
+    padding-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .what-we-do p {
+    font-size: 80%;
+    width: 100%;
+  }
+
+  .program img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .box {
+    padding-bottom: 20%;
+  }
+
+  h3 {
+    font-size: 90%;
+  }
+
+  header {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-attachment: fixed;
+  }
+
+  .who-we-are p {
+    font-size: 80%;
+    width: 85%;
+  }
+
+  .card img {
+    margin:auto;
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .image-description-halves p, li {
+    font-size: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .title img {
+    background-color: pink;
+    color: pink;
+    width: 20%;
+  }
+
+  .contact-us {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-us h2, p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+  }
+
+  .contact-us p { 
+    font-size: 70%;
+    color: pink;
+  }
+
+  .contact-us label, .contact-us input {
+    margin: 0 auto;
+  }
+
+  .donate {
+    height: 30%;
+    width: 70vw;
+    border-color: none;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+
+
+
+}

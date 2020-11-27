@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header class="donate-header">
+      <nav>
+        <div class="row">
+          <a href="index.html"><img src="images/logo.png" alt="Variety Logo" class="logo"></a>
+          <ul class="main-nav">
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="donate.html" class="action-nav">Donate</a></li>
+            <li><a href="contact.html" class="action-nav">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="intro-text-box">
+        <h1>Donate</h1>
+        <p>Change a child's life today</p>
+        <a class="btn btn-full" href="#">Donate</a>
+        <a class="btn btn-ghost" href="#">Contact</a>
+      </div>
+
+    </header>
+
+
+    <form class="toggle-radio">
+      <h2>Choose your donation amount</h2>
+      <div class="switch-field">
+        <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+        <label for="radio-one">One-off</label>
+        <input type="radio" id="radio-two" name="switch-one" value="no" />
+        <label for="radio-two">Recurring</label>
+      </div>
+    </form>
+
+
+    <div class="donate">
+      <div class="row">
+        <div class="col span-1-of-3">
+          <div class="option">
+            <input type="radio" name="pricing" id="card1">
+            ::before
+            Shadow Content (User Agent)
+            ::after
+            </input>
+            <label for="card1">
+              <h5>School Supplies</h5>
+              <img src="images/school-supply.png" alt="Child with school supply">
+              <!-- Two Kids Writing on a Notebook. (2019). [Image]. Retrieved 26 November 2020, from https://www.canva.com/media/MADQtupP9qo. -->
+              <h2>
+                $30
+              </h2>
+              <p>Will help provide a disadvantaged child with essential school supplies</p>
+            </label>
+          </div>
+        </div>
+
+        <div class="col span-1-of-3">
+          <div class="option">
+            <input type="radio" name="pricing" id="card2">
+            ::before
+            Shadow Content (User Agent)
+            ::after
+            </input>
+            <label for="card2">
+              <h5>Specialised Wig</h5>
+              <img src="images/donateHair.png" alt="Donate Hair">
+              <!-- https://www.variety.org.au/nsw/get-involved/ -->
+              <h2>
+                $50
+              </h2>
+              <p>Will help fund a specialised wig for a child with alopecia or cancer</p>
+            </label>
+          </div>
+        </div>
+
+        <div class="col span-1-of-3">
+          <div class="option">
+            <input type="radio" name="pricing" id="card3">
+            ::before
+            Shadow Content (User Agent)
+            ::after
+            </input>
+            <label for="card3">
+              <h5>Insulin Pump</h5>
+              <img src="images/insulin.png" alt="Insulin Pump">
+              <!-- https://www.variety.org.au/vic/about/media/image-gallery/ -->
+              <h2>
+                $100
+              </h2>
+              <p>Will help fund an Insulin Pump for a child with diabetes</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="donate-btn">
+      <input type="submit"  value="Donate Now">
+    </section>
+    
+     
+    
+
+
+
+
+
+
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get Involved</a></li>
+          </ul>
+        </div>
+
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/VarietyNSWACT/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://twitter.com/varietyAU"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/varietynsw_act/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/VarietyAU"><ion-icon name="logo-youtube"></ion-icon></a></li>
+          </ul>
+          <!-- Ionicons: The premium icon pack for Ionic Framework. Ionicons.com. Retrieved 26 November 2020, from https://ionicons.com. -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="subscribe">
+          <div class="subscribe-inner">
+            <div class="subscribe-text">
+              <h4>Subscribe to our Newsletter</h4>
+              <form class="subscribe-form" action="/">
+                <div class="subscribe-form-input">
+                  <input class="subscribe-email-input" type="email" , placeholder="Email Address">
+                  <input class="subscribe-form-submit" type="submit" , value="Subscribe">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="row">
+        <p>Copyright &copy; 2020 by Variety - Children's Charity. All rights reserved.</p>
+      </div>
+
+    </footer>
+  </body>
+</html>

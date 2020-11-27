@@ -1,0 +1,890 @@
+/* ------------------------- SET UP ------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,400;1,600;1,800;1,900&display=swap');
+
+
+
+/* ----------- Orange color #FFB806 ----------- */
+
+
+
+
+/* ------------------------- REUSABLE COMPONENTS ------------------------- */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* --- HALF IMAGE AND DESCRIPTION --- */
+
+.image-description-halves {
+  margin-top: 30px;
+}
+
+.image-description-halves p {
+  overflow: hidden;
+}
+.image-description-halves:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.image-description-halves:last-child {
+  padding-left: 3%;
+}
+
+/* the image */
+.img-des-image {
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.img-des-des {
+  margin-bottom: 50px;
+}
+
+.small-des {
+  font-size: 80%;
+}
+
+
+/* ------------------------- IMAGES ------------------------- */
+
+.section-features img {
+  margin: 0 auto;
+  display: flex;
+  width: 70%;
+  border-color: pink;
+
+}
+
+
+/* ------------------------- HEADING ------------------------- */
+
+h1, h2, h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #FFB806;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/* ------------------------- PARAGRAPH ------------------------- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  padding-bottom: 5%;
+}
+
+.short-copy  {
+  font-size: 90%;
+  padding-top: 15%;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+.section-features h4 {
+  padding-top: 15%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* ------------------------- LINKS ------------------------- */
+
+a:link, a:visited {
+  color: #FFB806;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #FFB806;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover, a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/* ------------------------- BUTTONS ------------------------- */
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, .btn-full:visited {
+  background-color: #FFB806;
+  border: 1px solid #FFB806;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+  background-color: white;
+  border: 1px solid white;
+  color: #FFB806;
+}
+
+.btn:hover, .btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover, .btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+
+
+/* ------------------------- HEADER ------------------------- */
+
+header {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-attachment: fixed;
+}
+
+.intro-header {
+  background-image: linear-gradient(to right, rgba(24, 11, 0, 0.8), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(images/home-header.png);
+}
+
+
+.about-header {
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/about.jpeg);
+}
+
+.work-header {
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/work.jpg);
+}
+
+.get-involved-header {
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(images/get-involved.jpg);
+}
+
+.donate-header {
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.5), rgba(0, 0, 0, 0.1)), url(images/donate-header.jpg);
+}
+
+.contact-header {
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.5), rgba(0, 0, 0, 0.1)), url(images/contact-header.png);
+}
+
+.intro-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-text-box p {
+  width: 40%;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+
+/* ----------- NAVIGATION BAR ----------- */
+/* https://codepen.io/MinzCode/pen/bGexzXw */
+nav {
+	position: relative;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	
+}
+
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+/* dis part for hamburger menu */
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+/* till here */
+
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+  border-bottom: 3.5px solid #FFB806;
+}
+
+
+.action-nav:link, .action-nav:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0.5em;
+  color: white;
+}
+
+
+/* ------------------------- FOOTER ------------------------- */
+/* Udemy Course: Build Responsive Real World Websites with HTML5 and CSS3 */
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li, .social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child, .social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited, 
+.social-links li a:link, 
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: 0.2s;
+}
+
+.footer-nav li a:hover, .footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link, .social-links li a:visited {
+  font-size: 160%;
+}
+
+.social-links li a:hover {
+  color: #FFB806;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* ----------- SUBSCRIBE FORM ----------- */
+/* Code inspired from https://codepen.io/arefeh_htmi/pen/ZEWPRGe */
+.subscribe {
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+
+
+.subscribe h4 {
+  color:#fff;
+  font-weight: 200;
+}
+
+.subscribe-form {
+  margin-top: 1rem;
+}
+
+.subscribe-form-input {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.subscribe-email-input {
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+.subscribe-form-submit {
+  background-color: #FFB806;
+  font-size: 80%;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------- HOME PAGE ------------------------- */
+
+
+
+
+/* ------------------------- OUR WORK ------------------------- */
+
+.what-we-do {
+  background-color: rgb(233, 233, 233);
+  padding: 10%;
+}
+
+.what-we-do p {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+
+.program {
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/program-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.program h2, h3{
+  color: white;
+}
+
+/* ----------- FLIP CARDS ----------- */
+/* Code inspired from https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.program {
+  margin: auto;
+  padding-bottom: 15%;
+  padding-top: 10%;
+}
+
+.program img {
+  width: 350px;
+  height: 350px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #FFB806;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* ------------------------- ABOUT US ------------------------- */
+
+.who-we-are {
+  background-color: rgb(235, 235, 235);
+}
+
+.who-we-are p {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.img-des-des li {
+
+  list-style: none;
+}
+
+/* ----------- CARDS ----------- */
+/* Code inspired from https://www.w3schools.com/howto/howto_css_cards.asp */
+
+.key-points {
+  padding-top: 5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  height: 550px;
+  background-color: white;
+  padding: 5%;
+  margin: auto;
+}
+
+.card > img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding-bottom: 1%;
+}
+
+.container {
+  margin: 10% auto;
+  text-align: center;
+}
+
+.key-points li {
+  text-align: left;
+  margin-left: 25%;
+  margin-top: 10%;
+  line-height: 3px;
+  font-size: 70%;
+}
+
+
+#funds {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.9), rgba(0, 0, 0, 0.5)), url(images/funds-bg.png);
+  color: white;
+}
+
+
+/* ------------------------- GET INVOLVED ------------------------- */
+.gallery {
+  margin: auto;
+  position: relative;
+  display: block;
+  padding: 5%;
+}
+
+.tile {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  font-size: 80%;
+}
+
+.tile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.description {
+  padding: 15px 16px;
+  height: 200px;
+}
+
+
+/* ------------------------- DONATE ------------------------- */
+
+
+/* ------------- TOGGLE RADIO ------------- */
+/* Code inspired from https://codepen.io/JiveDig/pen/jbdJXR */
+
+.toggle-radio {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/*  this vertically center aligns the element */
+.switch-field {
+	display: flex;
+	margin: 0 auto;
+  align-content: center;
+  padding: 0;
+	overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 150%;;
+	line-height: 1;
+	text-align: center;
+	padding: 16px 32px;
+	margin-right: -1px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #FFB806;
+	box-shadow: none;
+}
+
+
+/* -------------  3 OPTIONS ------------- */
+/* Code inspired from https://www.youtube.com/watch?v=n2vd1LC6nvg */
+
+.donate {
+  color: #2c2c51;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.option{
+  height: 70%;
+  position: relative;
+}
+
+input[type="radio"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  height: 520px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 7px 7px 7px 7px rgba(2, 28, 53, 0.041);
+  cursor: pointer;
+  outline: none;
+}
+input[type="radio"]:before{
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: #f9fafd;
+  border: 1px solid #e2e6f3;
+  border-radius: 50%;
+  top: 35px;
+  right: 20px;
+}
+input[type="radio"]:after{
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  top: 39.5px;
+  right: 24.5px;
+}
+label{
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+}
+.option h5{
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 20px 30px;
+}
+.option h2{
+  font-size: 28px;
+  margin: auto;
+}
+
+.option p{
+  font-size: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.option img {
+  display: block;
+  margin: 15px 0 20px 30px;
+  width: 80%;
+}
+
+span{
+  font-weight: 400;
+  font-size: 18px;
+  color: #7b7b93;
+}
+input[type="radio"]:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+input[type="radio"]:checked{
+  border: 3px solid #FFB806;
+}
+input[type="radio"]:checked:after{
+  background-color: #FFB806;
+}
+
+
+/* ------------- DONATE NOW BUTTON ------------- */
+
+
+.donate-btn {
+  display: flex;
+	margin: 0 auto;
+  align-content: center;
+  padding-bottom: 5%;
+	overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-btn input[type="submit"] {
+    font-weight: 500;
+    border-radius: 200px;
+    margin-top: 1em;
+    background-color: #FFB806; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    margin: 4px 2px;
+}
+
+
+
+/* ------------------------- CONTACT US ------------------------- */
+
+.contact-us {
+    width: 50%;
+    margin: 1em auto;
+}
+
+.contact-us label, .contact-us input, .contact-us textarea {
+    display: block;
+    width: 100%;
+}
+
+.contact-us ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us li {
+    padding: 0.1em;
+}
+
+.contact-us span {
+    font-weight: 600;
+    color: #102a43;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.contact-us input[type="submit"] {
+    background: #FFB806;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.contact-us form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.required-star {
+    color: #fc4366;
+}
+
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+}
