@@ -15,25 +15,35 @@
     font-size: 80%;
   }
   nav {
-    background-color: #FFB806;
+    background-color: black;
+    position: relative;
+  }
+
+  .logo, .icon-burger {
+    margin: 0 auto;
   }
 
   nav .main-nav {
+    display: grid;
+    grid-template-columns: auto;
     float: none;
 		position: fixed;
-		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 100px;
+		top: 0;
 		bottom: 100%;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
+    margin-bottom: 0;
+    margin-top: 0;
+		justify-content: center;
 		background-color: rgba(0,0,0,.8);
 		overflow: hidden;
-		box-sizing: border-box;
 		transition: all .5s ease-in-out;
+    font-size: 150%;
+    padding-top: 5%;
+  }
+
+  .main-nav li {
+    margin: 0 auto;
   }
 
   nav .main-nav a {
@@ -62,7 +72,7 @@
     font-size: 15px;
     text-align: center;
     width: 80%;
-    padding: 5%;
+    padding-top: 35%;
     line-height: 250%;
   }
 
@@ -105,6 +115,10 @@
     height: 350px;
   }
 
+  .program h2, .program h3 {
+    color: white;
+  }
+
   .box {
     padding-bottom: 20%;
   }
@@ -114,12 +128,34 @@
   }
 
   header {
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  background-attachment: fixed;
+    height: 110vh;
   }
 
+  .intro-header {
+    background-size: 260%;
+    height: 80vh;
+  }
+
+  .about-header {
+    background-size: 220%;
+    height: 80vh;
+  }
+
+  .contact-header {
+    background-size: 220%;
+    height: 80vh;
+  }
+
+  .donate-header {
+    background-size: 238%;
+    height: 80vh;
+  }
+
+  .work-header {
+    background-size: 220%;
+    height: 80vh;
+  }
+  
   .who-we-are p {
     font-size: 80%;
     width: 85%;
@@ -143,9 +179,11 @@
     margin: 0 auto;
   }
 
-  .title img {
-    background-color: pink;
-    color: pink;
+  .tile {
+    height: 200%;
+  }
+
+  .tile img {
     width: 20%;
   }
 
@@ -162,7 +200,6 @@
 
   .contact-us p { 
     font-size: 70%;
-    color: pink;
   }
 
   .contact-us label, .contact-us input {
@@ -177,6 +214,38 @@
     padding-bottom: 5%;
   }
 
+  .option img {
+    width: 80%;
+    margin: 0 auto;
+  }
 
+ .toggle-radio {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .switch-field {
+    font-size: 50%;
+  }
+
+  .donate-btn {
+    padding-bottom: 25%;
+  }
+
+  .footer-nav {
+    display: grid;
+    text-align: left;
+  }
+  
+  .social-links {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 }

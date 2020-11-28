@@ -18,18 +18,22 @@
     <script src="script.js"></script>
     <header class="work-header">
       <nav>
-        <div class="row">
+          <input id="nav-toggle" type="checkbox">
           <a href="index.html"><img src="images/logo.png" alt="Variety Logo" class="logo"></a>
-          <!-- Variety, the Children's Charity Race Day. Shoalhaven City Turf Club. Retrieved 26 November 2020, from https://sctcnowra.com.au/race-event-calendar/variety-the-childrens-charity-race-day/. -->
           <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
             <li><a href="work.html">Our Work</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="#">Reports</a></li>
             <li><a href="donate.html" class="action-nav">Donate</a></li>
             <li><a href="contact.html" class="action-nav">Contact</a></li>
           </ul>
-        </div>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+
       </nav>
       <div class="intro-text-box">
         <h1>Our Work</h1>
@@ -72,7 +76,7 @@
       </div>
     </section>
     
-    <section class="program">
+    <section  class="program">
       <h2>Our Program</h2>
       <div class="row">
         <div class="col span-1-of-3">
@@ -129,6 +133,59 @@
       </div>
     </section>
 
+    <section class="testimonials">
+      <div class="row">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="row">
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <div class="profile-pic">
+              <img class="image" src="images/jordan.png" alt="Jordan"/>
+            </div>
+            <div class="content-container">
+              <p class="title">Jordan</p>
+              <p class="content">
+                Jordan has been having difficulty reading books at his level as a 10-year-old. See how Jordan has advanced his reading level through the Variety Intensive Program 2018.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="profile-pic">
+              <img class="image" src="images/amelia.png" alt="Amelia"/>
+            </div>
+            <div class="content-container">
+              <p class="title">Amelia</p>
+              <p class="content">
+                Amelia is a shy student at school, and she has been having a harder time communicating with her peers. Find out how Amelia has learned social schools through the program.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="profile-pic">
+              <img class="image" src="images/asher.png" alt="Asher"/>
+            </div>
+            <div class="content-container">
+              <p class="title">Asher</p>
+              <p class="content">
+                Asher is developing his leadership skills through the Variety Intensive Program 2020. See how Asher is performing in class now.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="profile-pic">
+              <img class="image" src="images/lydia.png" alt="Lydia" />
+            </div>
+            <div class="content-container">
+              <p class="title">Lydia</p>
+              <p class="content">
+                Lydia has been having a hard time with her words, but she has expanded her vocabulary through the program. See how the program has helped Lydia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
 
 
@@ -140,10 +197,10 @@
       <div class="row">
         <div class="col span-1-of-2">
           <ul class="footer-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Get Involved</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
           </ul>
         </div>
 
@@ -159,20 +216,28 @@
       </div>
 
       <div class="row">
-        <div class="subscribe">
-          <div class="subscribe-inner">
-            <div class="subscribe-text">
-              <h4>Subscribe to our Newsletter</h4>
-              <form class="subscribe-form" action="/">
-                <div class="subscribe-form-input">
-                  <input class="subscribe-email-input" type="email" , placeholder="Email Address" required>
-                  <input class="subscribe-form-submit" type="submit" , value="Subscribe">
-                </div>
-              </form>
+          <div class="col span-1-of-2">
+            <div class="registered-logo">
+              <img src="images/registered-logo.png" width=30%>
+              <!-- ACNC Registered Charity Logo - Uniting Communities. Uniting Communities. Retrieved 26 November 2020, from https://www.unitingcommunities.org/donate-support/acnc-registered-charity-logo_rgb-2-2/. -->
+            </div>
+          </div>
+
+          <div class="col span-1-of-2">
+            <div class="subscribe">
+              <div class="subscribe-inner">
+                <div class="subscribe-text">
+                <h4>Subscribe to our Newsletter</h4>
+                <form class="subscribe-form" action="/">
+                  <div class="subscribe-form-input">
+                    <input class="subscribe-email-input" type="email" , placeholder="Email Address" required>
+                    <input class="subscribe-form-submit" type="submit" , value="Subscribe">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
         
       <div class="row">
         <p>Copyright &copy; 2020 by Variety - Children's Charity. All rights reserved.</p>

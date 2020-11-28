@@ -18,16 +18,22 @@
     <script src="script.js"></script>
     <header class="about-header">
       <nav>
-        <div class="row">
+          <input id="nav-toggle" type="checkbox">
           <a href="index.html"><img src="images/logo.png" alt="Variety Logo" class="logo"></a>
           <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
             <li><a href="work.html">Our Work</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
             <li><a href="donate.html" class="action-nav">Donate</a></li>
             <li><a href="contact.html" class="action-nav">Contact</a></li>
           </ul>
-        </div>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+
       </nav>
       <div class="intro-text-box">
         <h1>About Us</h1>
@@ -128,10 +134,10 @@
       <div class="row">
         <div class="col span-1-of-2">
           <ul class="footer-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Get Involved</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
           </ul>
         </div>
 
@@ -147,20 +153,28 @@
       </div>
 
       <div class="row">
-        <div class="subscribe">
-          <div class="subscribe-inner">
-            <div class="subscribe-text">
-              <h4>Subscribe to our Newsletter</h4>
-              <form class="subscribe-form" action="/">
-                <div class="subscribe-form-input">
-                  <input class="subscribe-email-input" type="email" , placeholder="Email Address" required>
-                  <input class="subscribe-form-submit" type="submit" , value="Subscribe">
-                </div>
-              </form>
+          <div class="col span-1-of-2">
+            <div class="registered-logo">
+              <img src="images/registered-logo.png" width=30%>
+              <!-- ACNC Registered Charity Logo - Uniting Communities. Uniting Communities. Retrieved 26 November 2020, from https://www.unitingcommunities.org/donate-support/acnc-registered-charity-logo_rgb-2-2/. -->
+            </div>
+          </div>
+
+          <div class="col span-1-of-2">
+            <div class="subscribe">
+              <div class="subscribe-inner">
+                <div class="subscribe-text">
+                <h4>Subscribe to our Newsletter</h4>
+                <form class="subscribe-form" action="/">
+                  <div class="subscribe-form-input">
+                    <input class="subscribe-email-input" type="email" , placeholder="Email Address" required>
+                    <input class="subscribe-form-submit" type="submit" , value="Subscribe">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
         
       <div class="row">
         <p>Copyright &copy; 2020 by Variety - Children's Charity. All rights reserved.</p>

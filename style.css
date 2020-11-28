@@ -1,5 +1,5 @@
 /* ------------------------- SET UP ------------------------- */
-
+/* gets rid of all default browser CSS settings */
 * {
   margin: 0;
   padding: 0;
@@ -73,12 +73,11 @@ section {
 
 /* ------------------------- IMAGES ------------------------- */
 
+/* center image */
 .section-features img {
   margin: 0 auto;
   display: flex;
   width: 70%;
-  border-color: pink;
-
 }
 
 
@@ -106,6 +105,7 @@ h2 {
   letter-spacing: 1px;
 }
 
+/* creates an orange underline */
 h2:after {
   display: block;
   height: 2px;
@@ -152,6 +152,7 @@ h3 {
 
 /* ------------------------- LINKS ------------------------- */
 
+/* sets link color to orange. also orange when visited */
 a:link, a:visited {
   color: #FFB806;
   text-decoration: none;
@@ -160,6 +161,7 @@ a:link, a:visited {
   transition: border-bottom 0.2s, color 0.2s;
 }
 
+/* when link is on hover over OR active, link is gray */
 a:hover, a:active {
   color: #555;
   border-bottom: 1px solid transparent;
@@ -167,6 +169,7 @@ a:hover, a:active {
 
 /* ------------------------- BUTTONS ------------------------- */
 
+/* button is a rounded rectangle */
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 10px 30px;
@@ -176,6 +179,7 @@ a:hover, a:active {
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
+/* button is an orange color */
 .btn-full:link, .btn-full:visited {
   background-color: #FFB806;
   border: 1px solid #FFB806;
@@ -183,11 +187,14 @@ a:hover, a:active {
   margin-right: 15px;
 }
 
+/* button has an orange BORDER color */
 .btn-ghost:link, .btn-ghost:visited {
   background-color: white;
   border: 1px solid white;
   color: #FFB806;
 }
+
+/* button hover over/active --> darker orange */
 
 .btn:hover, .btn:active {
   background-color: #cf6d17;
@@ -206,12 +213,15 @@ a:hover, a:active {
 
 /* ------------------------- HEADER ------------------------- */
 
+/* cover the header with a background image */
 header {
   background-size: cover;
   background-position: center;
   height: 80vh;
   background-attachment: fixed;
 }
+
+/* each header has a different background image */
 
 .intro-header {
   background-image: linear-gradient(to right, rgba(24, 11, 0, 0.8), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url(images/home-header.png);
@@ -262,18 +272,18 @@ header {
 
 /* ----------- NAVIGATION BAR ----------- */
 /* https://codepen.io/MinzCode/pen/bGexzXw */
+
+/* nav location  */
 nav {
-	position: relative;
+	position: fixed;
 	z-index: 10;
 	left: 0;
 	right: 0;
 	top: 0;
-	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
 	
 }
-
 nav .links {
 	float: right;
 	padding: 0;
@@ -295,7 +305,8 @@ nav .links a {
 	color: #fff;
 	text-decoration: none;
 }
-/* dis part for hamburger menu */
+
+/* this part for hamburger menu */
 #nav-toggle {
 	position: absolute;
 	top: -100px;
@@ -310,14 +321,14 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: #FFB806;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
 /* till here */
 
-
+/* nav buttons styling */
 .main-nav {
   float: right;
   list-style: none;
@@ -356,6 +367,7 @@ nav .icon-burger .line {
 
 /* ------------------------- FOOTER ------------------------- */
 /* Udemy Course: Build Responsive Real World Websites with HTML5 and CSS3 */
+
 footer {
   background-color: #333;
   padding: 50px;
@@ -371,6 +383,8 @@ footer {
   list-style: none;
   float: right;
 }
+
+/* footer content styling and location */
 
 .footer-nav li, .social-links li {
   display: inline-block;
@@ -412,13 +426,13 @@ footer p {
 
 /* ----------- SUBSCRIBE FORM ----------- */
 /* Code inspired from https://codepen.io/arefeh_htmi/pen/ZEWPRGe */
+
 .subscribe {
   margin: 0 auto;
   display: flex;
   padding: 0;
   position: relative;
 }
-
 
 .subscribe h4 {
   color:#fff;
@@ -441,6 +455,7 @@ footer p {
 }
 
 .subscribe-form-submit {
+  -webkit-appearance:none;
   background-color: #FFB806;
   font-size: 80%;
   color: black;
@@ -448,11 +463,6 @@ footer p {
   padding: 1rem 2rem;
   margin-top: 0.5rem;
 }
-
-/* ------------------------- HOME PAGE ------------------------- */
-
-
-
 
 /* ------------------------- OUR WORK ------------------------- */
 
@@ -467,6 +477,7 @@ footer p {
   text-align: center;
 }
 
+/* program background image */
 .program {
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(24, 11, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/program-bg.jpg);
@@ -475,11 +486,12 @@ footer p {
 }
 
 .program h2, h3{
-  color: white;
+  color: black;
 }
 
 /* ----------- FLIP CARDS ----------- */
 /* Code inspired from https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
 .program {
   margin: auto;
   padding-bottom: 15%;
@@ -501,7 +513,6 @@ footer p {
   text-align: center;
   position: relative;
 }
-
 
 .flip-card-inner {
   position: relative;
@@ -546,6 +557,65 @@ footer p {
   transform: translate(-50%, -50%);
 }
 
+/* ----------- TESTIMONIALS ----------- */
+
+.testimonials {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+  height: 100%;
+  justify-content: center;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.testimonial-card {
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: 4px 4px 8px -3px rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 15px 0 15px 15px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 0.8em;
+  margin: 0;
+}
 
 
 
@@ -562,7 +632,6 @@ footer p {
 }
 
 .img-des-des li {
-
   list-style: none;
 }
 
@@ -603,7 +672,7 @@ footer p {
   font-size: 70%;
 }
 
-
+/* background image for Where Your Money Goes */
 #funds {
   background-size: cover;
   background-position: center;
@@ -635,15 +704,23 @@ footer p {
 }
 
 .description {
-  padding: 15px 16px;
-  height: 200px;
+  padding: 5px 16px 15px 16px;
+  height: 250px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description h2 {
+  color: black;
+  margin: 0 auto;
+  padding: 2%;
 }
 
 
 /* ------------------------- DONATE ------------------------- */
 
 
-/* ------------- TOGGLE RADIO ------------- */
+/* ------ TOGGLE RADIO ------ */
 /* Code inspired from https://codepen.io/JiveDig/pen/jbdJXR */
 
 .toggle-radio {
@@ -791,8 +868,7 @@ input[type="radio"]:checked:after{
 }
 
 
-/* ------------- DONATE NOW BUTTON ------------- */
-
+/* --- DONATE NOW BUTTON --- */
 
 .donate-btn {
   display: flex;
@@ -803,23 +879,6 @@ input[type="radio"]:checked:after{
   justify-content: center;
   align-items: center;
 }
-
-.donate-btn input[type="submit"] {
-    font-weight: 500;
-    border-radius: 200px;
-    margin-top: 1em;
-    background-color: #FFB806; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 150%;
-    margin: 4px 2px;
-}
-
-
 
 /* ------------------------- CONTACT US ------------------------- */
 
@@ -851,6 +910,7 @@ input[type="radio"]:checked:after{
 }
 
 .contact-us input[type="submit"] {
+    -webkit-appearance:none;
     background: #FFB806;
     color: black;
     font-weight: 500;
